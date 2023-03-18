@@ -1,0 +1,161 @@
+:root{
+    --body_Color:#211a39;
+    --container_Color:#393053 ;
+    --card_Color:#635985;
+    --button_Color:#EB455F;
+    --titel-Color:#f2f2f2;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+body{
+    background-color: var(--body_Color);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 1rem;
+}
+
+header{
+    color: var(--titel-Color);
+    background-color: var(--card_Color);
+    border-radius: 1rem;
+    width: 60%;
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: var(--titel-Color) dashed 1px;
+}
+
+.container{
+    background-color: var(--container_Color);
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5rem;
+    border: var(--titel-Color) solid 1px;
+}
+
+.card{
+    width: 90%;
+    background-color: var(--card_Color);
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+    margin: 1rem;
+    border-radius: .8rem;
+    overflow: hidden;
+    border-top: var(--titel-Color) solid 1px;
+}
+
+.body_user{
+    background-color: aliceblue;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    padding: 1rem 0rem;
+    cursor: default;
+    border-radius: 1rem 0rem 1rem 0rem;
+}
+
+.img_container {
+    padding: .5rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.img_container img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid white;
+    
+}
+
+.btn_container{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    gap: 2rem;
+    
+}
+
+.btn_container button{
+    background-color: var(--titel-Color);
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    padding: .3rem;
+    border: none;
+    border-radius: 50%;
+    color: var(--body_Color);
+    transition: all .3s;
+    font-weight: bold;
+}
+
+.btn_container button:hover{
+    background-color: var(--container_Color);
+    color: var(--titel-Color);
+}
+
+.containerNewUsers{
+    background-color: var(--container_Color);
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    border: var(--titel-Color) dashed 1px;
+}
+
+.card_newUser{
+    max-width: 300px;
+    background-color: var(--card_Color);
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem;
+    border-radius: .8rem;
+    overflow: hidden;
+    border-top: var(--titel-Color) solid 1px;
+    padding: 1rem;
+}
+
+.btnDeleteUser{
+    background-color: var(--body_Color);
+    color: var(--titel-Color);
+    padding: 1rem;
+    border: transparent;
+    border-radius: .5rem;
+    font-weight: bold;
+    transition: background-color .5s;
+}
+
+.btnDeleteUser:hover{
+    background-color: var(--titel-Color);
+    color: var(--body_Color);
+}
