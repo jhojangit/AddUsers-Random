@@ -126,6 +126,7 @@ header{
     background-color: var(--container_Color);
     width: 90%;
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     border: var(--titel-Color) dashed 1px;
 }
