@@ -1,7 +1,7 @@
 async function main() {
     let db = {
         user: await getData(),
-        localSt: JSON.parse(window.localStorage.getItem("usersInMemory")) || [],
+        localSt: JSON.parse(window.localStorage.getItem("usersInMemory")) || []
     };
 
     printUser(db);
@@ -59,7 +59,7 @@ function btnNext() {
     let btnNextHTML = document.querySelector(".next_btn");
     btnNextHTML.addEventListener("click", () => {
         main();
-        window.location.reload();
+        //window.location.reload();
     });
 }
 
